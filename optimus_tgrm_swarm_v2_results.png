@@ -1,8 +1,11 @@
-📊 Dashboard Image Placeholder
+📊 **Dashboard Image Placeholder**
 
-[Upload your actual screenshot here]
+Replace this file with your actual screenshot of the results dashboard (e.g., swarm performance charts, RYE scores bar graph, robot status heatmap) to make the README visually stunning.
 
-Suggested: Run the swarm script locally and screenshot the output, or use matplotlib to generate:
-- Swarm Performance: 98.7%
-- High RYE: 0.982
-- Robots Coordinated: 12
+**How to replace:**
+1. Download your PNG.
+2. On this repo page, click **Add file** > **Upload files**
+3. Select your `optimus_tgrm_swarm_v2_results.png`
+4. Commit changes.
+
+It will then render perfectly above the features section.
