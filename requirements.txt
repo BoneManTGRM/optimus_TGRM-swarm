@@ -1,0 +1,6 @@
+# Optimus TGRM Swarm v2 Dependencies
+numpy>=1.24
+matplotlib
+seaborn
+# For advanced sim: torch (optional)
+requests
