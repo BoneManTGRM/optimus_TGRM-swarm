@@ -1,0 +1,1 @@
+X post draft: 'Just open-sourced Optimus TGRM Swarm v2 - heterogeneous self-repairing robot fleets using TGRM. Inspired by first principles. Feedback welcome @elonmusk'

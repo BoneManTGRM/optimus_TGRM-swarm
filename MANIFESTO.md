@@ -1,0 +1,2 @@
+# The Reparodynamics Manifesto
+Self-repairing intelligence is the key to abundance. Optimus TGRM Swarm is the first step toward machines that heal themselves and accelerate human progress across the stars.
