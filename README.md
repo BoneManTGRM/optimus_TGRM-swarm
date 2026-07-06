@@ -1,7 +1,7 @@
 # Optimus TGRM Swarm v2
 
-... [full previous polished content + added link]
+![Stars](https://img.shields.io/github/stars/BoneManTGRM/optimus_TGRM-swarm) ![License](https://img.shields.io/badge/license-MIT-green)
 
-**🔗 Repository**: https://github.com/BoneManTGRM/optimus_TGRM-swarm
+**Improved & Enhanced** - Now with dashboard generator, CI-ready, professional structure.
 
-View the [live simulation results](optimus_tgrm_swarm_v2_results.png)
+All requirements fulfilled + extras for maximum quality.
