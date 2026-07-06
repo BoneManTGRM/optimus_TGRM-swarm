@@ -1,7 +1,13 @@
+import sys
+from pathlib import Path
+
+# Make sure local modules are importable on Streamlit Cloud and locally
+sys.path.append(str(Path(__file__).parent))
+
 import streamlit as st
 import time
 import json
-from optimus_tgrm_swarm_v2 import NexusSwarm, Agent
+from optimus_tgrm_swarm_v2 import NexusSwarm
 
 st.set_page_config(page_title="Nexus Swarm", page_icon="♻️", layout="wide")
 
@@ -9,6 +15,8 @@ st.title("♻️ Nexus Swarm — Live Demo")
 st.markdown("""
 **Heterogeneous Self-Repairing Agent Collective**  
 *Reparodynamics in action — teacher broadcasting, RYE emergence, skill export.*
+
+**100% Local • No server required • No paid APIs**
 """)
 
 with st.sidebar:
@@ -36,21 +44,17 @@ if run_button:
             status_text.text(f"Cycle {i+1}/{cycles} | Avg RYE: {metrics['avg_rye']:.1f} | Energy: {metrics['avg_energy']:.1f}")
             time.sleep(speed)
 
-        # Final results
         st.success("Simulation complete")
 
-        # Metrics
         final_avg_rye = sum(a.repair_yield for a in swarm.agents) / len(swarm.agents)
         total_learned = sum(len(a.learned_behaviors) for a in swarm.agents)
 
         col1.metric("Final Average RYE", f"{final_avg_rye:.1f}")
         col2.metric("Behaviors Learned (Swarm)", total_learned)
 
-        # Show recent history
         st.subheader("Recent Swarm Metrics")
         st.dataframe(history[-8:] if len(history) > 8 else history, use_container_width=True)
 
-        # Export
         exported = swarm.export_skills("high_rye_skills.json")
         with open(exported) as f:
             skills_data = json.load(f)
@@ -66,4 +70,6 @@ else:
     - **Teacher broadcasting** of high-value behaviors  
     - **RYE (Repair Yield per Energy)** emergence over time  
     - **Skill export** — the collective wisdom, ready for persistence or transfer
+
+    **Everything runs 100% locally. No server. No paid services.**
     """)
