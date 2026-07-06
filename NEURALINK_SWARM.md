@@ -1,0 +1,1 @@
+Integration ideas for brain-swarm interfaces and collective intelligence amplification.
