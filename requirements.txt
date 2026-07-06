@@ -1,2 +1,5 @@
 matplotlib
 numpy
+seaborn
+rich
+streamlit
