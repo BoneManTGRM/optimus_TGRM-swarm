@@ -1,0 +1,1 @@
+Potential integration with Grok for reasoning in swarm decision making. 'Understand the Universe' by making robots that persist and adapt.
