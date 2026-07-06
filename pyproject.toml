@@ -1,0 +1,4 @@
+[project]
+name = "optimus-tgrm-swarm"
+version = "2.1.0"
+description = "Advanced heterogeneous swarm simulation"
